@@ -1,0 +1,9 @@
+.dashedLine {
+    animation: dash 2s linear infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }

@@ -1,0 +1,35 @@
+.infoTitleContainer {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  background-color: yellow;
+}
+
+.title {
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.titleIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.dashedLine {
+  background-color: yellow;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.react-archer__arrow {
+  transition: transform 0.5s ease;
+}
+
+.react-archer__arrow--animated {
+  transform: translateX(10px);
+}
