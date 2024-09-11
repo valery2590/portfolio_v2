@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import styles from "../../styles/InfoTitle.module.scss";
 import { ArcherContainer, ArcherElement } from "react-archer";
+import { useRouter } from "next/navigation";
 
 const InfoTitle = ({ title, icon, direction }) => {
   const [hovered, setHovered] = useState(false);
+
+  const router = useRouter()
+
+  const handleNavigation = (page) => {
+    router.push(`/${page}`);
+  };
 
   return (
     <ArcherContainer strokeColor="black">
@@ -50,7 +57,7 @@ const InfoTitle = ({ title, icon, direction }) => {
             }}
             onMouseLeave={() => setHovered(false)}
           >
-            <div>About</div>
+            <div onClick={()=>handleNavigation('about')}>About</div>
             <img src={"/icons/account_circle.svg"} alt="icon" style={{width: "2.5vw"}}  />
           </div>
         </ArcherElement>
@@ -108,7 +115,7 @@ const InfoTitle = ({ title, icon, direction }) => {
               fontSize: "1.3vw",
             }}
           >
-            <div>Projects</div>
+            <div onClick={()=>handleNavigation('projects')}>Projects</div>
             <img src={"/icons/directions_walk.svg"} alt="icon" style={{width: "2.5vw"}} />
           </div>
         </ArcherElement>
@@ -137,7 +144,7 @@ const InfoTitle = ({ title, icon, direction }) => {
               fontSize: "1.3vw",
             }}
           >
-            <div>Skills</div>
+            <div onClick={()=>handleNavigation('skills')}>Skills</div>
             <img src={"/icons/Code.svg"} alt="icon" style={{width: "2.5vw"}} />
           </div>
         </ArcherElement>
@@ -166,7 +173,7 @@ const InfoTitle = ({ title, icon, direction }) => {
               fontSize: "1.3vw",
             }}
           >
-            <div>Quizz</div>
+            <div onClick={()=>handleNavigation('quizz')}>Quizz</div>
             <img src={"/icons/favorite.svg"} alt="icon" style={{width: "2.5vw"}} />
           </div>
         </ArcherElement>
@@ -215,7 +222,7 @@ const InfoTitle = ({ title, icon, direction }) => {
               fontSize: "1.3vw",
             }}
           >
-            <div>Contact</div>
+            <div onClick={()=>handleNavigation('contact')}>Contact</div>
             <img src={"/icons/gmail_groups.svg"} alt="icon" style={{width: "2.5vw"}} />
           </div>
         </ArcherElement>

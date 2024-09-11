@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/layouts/Layout';
 
-const about = () => {
+const contact = () => {
     return (
         <Layout>
-            <div>sidebar nav bar</div>
+            <p>contact</p>
         </Layout>
     );
 };
 
-export default about;
+export default contact;

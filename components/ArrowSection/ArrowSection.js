@@ -10,7 +10,7 @@ const ArrowSection = ({ direction, long }) => {
           {/* Línea discontinua vertical - hacia abajo
           Flecha en el extremo inferior de la línea 
            */}
-          <svg width="100" height="300" xmlns="http://www.w3.org/2000/svg">
+          <svg width="100" height="300" viewBox="45 45 110 10" xmlns="http://www.w3.org/2000/svg">
             <line
               x1="50"
               y1="20"
@@ -36,7 +36,7 @@ const ArrowSection = ({ direction, long }) => {
         Flecha en el extremo superior de la línea
              
          */}
-          <svg width="100" height="200" xmlns="http://www.w3.org/2000/svg">
+          <svg width="100" height="200"  viewBox="45 45 110 10" xmlns="http://www.w3.org/2000/svg">
             <line
               x1="50"
               y1="10"
@@ -103,7 +103,7 @@ const ArrowSection = ({ direction, long }) => {
         Flecha en el extremo izquierdo de la línea
          Línea discontinua horizontal - hacia izquierda 
          */}
-          <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+          <svg width="200" height="100"   viewBox="45 45 110 10"  xmlns="http://www.w3.org/2000/svg" >
             <line
               x1="50" // inicio del largo del recorrido
               y1="50"

@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/layouts/Layout';
 
-const about = () => {
+const projects = () => {
     return (
         <Layout>
-            <div>sidebar nav bar</div>
+            <p>projecs pelao</p>
         </Layout>
     );
 };
 
-export default about;
+export default projects;

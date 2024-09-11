@@ -29,3 +29,40 @@
    letter-spacing: 1.5px;
 }
 
+.navMainContainer{
+  width: 35%;
+}
+.navUlContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.navUlContainer li{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.navUlContainer li:hover{
+  border-bottom: dashed;
+}
+
+.navIcon{
+  display: flex;
+  width: 25%;
+}
+
+
+.arrowContainer{
+  background-color: yellow;
+  width: 10px;
+}
+
+.titleNavLiContainer{
+  display: flex;
+  justify-content: space-around;
+}
